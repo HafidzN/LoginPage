@@ -1,0 +1,330 @@
+:root {
+  --main-color: #02a8f3;
+  --secondary-color: #409eff;
+  --third-color: #e6f6fe;
+  --hover-color: #02a8f39c;
+  --border-color: #ebeef5;
+  --black-color: #303133;
+  --second-black-color: #767676;
+  --red-color: #e57373;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Nunito Sans",sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+}
+
+.main svg {
+  position: absolute;
+  width: 100%;
+}
+
+.navigation {
+  height: 5rem;
+  padding: 3rem 10rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 99;
+}
+
+.toggle, .close {
+  display: none;
+}
+
+.nav-menu {
+  font-size: 2rem;
+}
+
+.nav-menu li {
+  display: inline-block;
+  margin-left: 5rem;
+  color: white;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  height: 75vh;
+  width: 80vw;
+  color: #fff0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 7rem 0 3rem 0;
+}
+
+.photo {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+.photo img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.form-cont {
+  width: 60%;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+.inner-form {
+  width: 60%;
+  height: 100%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.inner-form img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.inner-form .input-area {
+  margin: 1rem 0;
+}
+
+.inner-form .input-area a {
+  color: var(--main-color);
+  font-weight: 700;
+  margin: 0 .5rem;
+  text-decoration: none;
+}
+
+.inner-form .input-area i {
+  position: absolute;
+  margin: 1rem 0;
+  color: var(--black-color);
+}
+
+.inner-form .input-area input {
+  position: relative;
+  font-family: "Nunito Sans",sans-serif;
+  background: transparent;
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem .8rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--main-color);
+  color: var(--black-color);
+  font-size: 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.inner-form .input-area span {
+  color: #303133;
+  padding: 0 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.inner-form .input-area .error {
+  color: var(--red-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: none;
+}
+
+.introductory {
+  position: relative;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.introductory span {
+  color: var(--second-black-color);
+  padding: 0.5rem 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+::-webkit-input-placeholder {
+  color: var(--black-color);
+  opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+  color: var(--black-color);
+  opacity: 0.7;
+}
+
+::-ms-input-placeholder {
+  color: var(--black-color);
+  opacity: 0.7;
+}
+
+::placeholder {
+  color: var(--black-color);
+  opacity: 0.7;
+}
+
+.btn {
+  position: relative;
+  display: block;
+  margin: 1rem auto;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  background: var(--main-color);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid var(--main-color);
+  color: white;
+  padding: .5rem 1.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  outline: none;
+}
+
+.btn:hover {
+  border: 2px solid var(--hover-color);
+  background-color: var(--hover-color);
+  cursor: pointer;
+  color: white;
+}
+
+.goBack {
+  display: none;
+  width: 100%;
+  padding: 5rem;
+  position: absolute;
+  bottom: 10rem;
+}
+
+.goBack .iconWrapper {
+  width: 3.5rem;
+  border-radius: 50%;
+  padding: 1rem;
+  border: 2px solid var(--main-color);
+}
+
+.goBack .iconWrapper i {
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.select-lang img {
+  -webkit-transform: translateY(0.35rem);
+          transform: translateY(0.35rem);
+}
+
+@media (max-width: 990px) {
+  .main svg {
+    display: none;
+  }
+  .main .navigation {
+    padding: 1rem 3rem;
+    background: transparent;
+  }
+  .main .toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: var(--main-color);
+    cursor: pointer;
+    padding: 1rem 0 1rem 1rem;
+    font-size: 2rem;
+  }
+  .main .close {
+    display: block;
+    position: absolute;
+    color: #fff;
+    right: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 5rem;
+  }
+  .main .nav-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-color);
+    left: 0;
+    top: 0;
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+  }
+  .main .nav-menu .close {
+    margin: 1rem;
+  }
+  .main .nav-menu .close i {
+    font-size: 2rem;
+  }
+  .main .nav-menu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .main .nav-menu ul li {
+    display: block;
+    font-size: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .main .nav-menu ul li a :hover {
+    color: white;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #fff;
+  }
+  .main .container {
+    height: 75vh;
+    top: 50%;
+    margin: 1rem;
+    padding-top: 0;
+  }
+  .main .photo {
+    display: none;
+  }
+  .main .form-cont {
+    width: 100%;
+    max-height: 100%;
+  }
+  .main .form-cont .inner-form {
+    width: 100%;
+    margin-top: -4rem;
+  }
+  .main .goBack {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

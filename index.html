@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mile.app | Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+</head>
+<body>
+    <section class="main">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,288L20,240C40,192,80,96,120,74.7C160,53,200,107,240,149.3C280,192,320,224,360,202.7C400,181,440,107,480,85.3C520,64,560,96,600,106.7C640,117,680,107,720,133.3C760,160,800,224,840,208C880,192,920,96,960,80C1000,64,1040,128,1080,138.7C1120,149,1160,107,1200,128C1240,149,1280,235,1320,250.7C1360,267,1400,213,1420,186.7L1440,160L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg>        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L20,208C40,192,80,160,120,160C160,160,200,192,240,192C280,192,320,160,360,128C400,96,440,64,480,96C520,128,560,224,600,229.3C640,235,680,149,720,133.3C760,117,800,171,840,213.3C880,256,920,288,960,272C1000,256,1040,192,1080,160C1120,128,1160,128,1200,128C1240,128,1280,128,1320,117.3C1360,107,1400,85,1420,74.7L1440,64L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg> -->
+
+        <div class="navigation">
+            <div class="brand">
+                <!-- <div class="iconWrapper">
+                    <i class="far fa-arrow-left"></i>
+                </div> -->
+            </div>
+            <div class="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-menu">
+                <div class="close">
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                    <li>
+                        <div class="select-lang">
+                            <img src="https://www.countryflags.io/gb/flat/24.png">
+                            <a href="">English</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="photo"><img src="img/typing.svg" alt="theme-png"></div>
+
+            <div class="form-cont">
+                <div class="inner-form">
+                    <img src="img/brand.png" alt="">
+
+                    <div class="introductory">
+                        <span>Your one stop platform to manage all of your field service management</span>
+                    </div>
+
+                    <div class="input-area">
+                        <form action="" method="post" id="form" autocomplete="off">
+                            <div>
+                                <input type="text" placeholder="Enter your organization's name" id="wordName">
+                            </div>
+
+                            <div>
+                                <span class="error">The organization name is required</span> 
+                            </div>
+
+                            <button class="btn" type="submit">Login</button>
+                            <span>Not registered yet? <a href="#">Contact us</a> for more info</span> 
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="goBack">
+            <div class="iconWrapper">
+                <i class="far fa-arrow-left"></i>
+            </div>
+        </div>
+    </section>
+
+    <script src='/js/script.js'>
+        // let toggler = document.querySelector(".toggle")
+        // let close = document.querySelector(".close")
+        // let menu = document.querySelector(".nav-menu")
+        // let error = document.querySelector(".error")
+        // let button = document.querySelector(".btn")
+        // let form_el = document.getElementById("form")
+        // let wordInput = document.getElementById("wordName")
+
+        // toggler.addEventListener("click", ()=>{
+        //     menu.style.display = "block"
+        // })
+
+        // close.addEventListener("click", ()=>{
+        //     menu.style.display = ""
+        // })
+
+        // form_el.addEventListener("submit", (evt) => {
+        //     evt.preventDefault()
+        //     checkInput()
+        // })
+
+        // function checkInput() {
+        //     if(wordInput.value.length){
+        //         wordInput.value = ''
+        //         error.style.display = ''
+        //     } else {
+        //         error.style.display = "block"
+        //     }
+        // }
+
+    </script>
+</body>
+</html>
